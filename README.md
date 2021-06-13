@@ -12,11 +12,15 @@
 - BOOTSTRAP5
 - Owl Carousel
 
+### Live Site link
+[Click Here](https://oneplus-landing-page.netlify.app/)
+
 ### Intro
 Bootstrap is an amazing CSS framework used for building responsive, mobile-first websites and expedites your work flow. It has got a wide range of components and can be easily implemented in your project. Bootstrap has removed jQuery in it's latest version (V5).
 
 To know more about BootStrap, check out their Official Documentation.
-https://getbootstrap.com/docs/5.0/getting-started/introduction/
+
+[Click Here](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
 ### Getting Started With Bootstrap5
 Copy-paste the stylesheet <link> into your <head> before all other stylesheets to load the CSS.
