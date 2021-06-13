@@ -1,0 +1,418 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Roman-55,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover
+{
+    color: crimson;
+}
+
+i{
+    color: black;
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+nav{
+    height: 50px;
+    z-index: 4;
+}
+#navbarSupportedContent{
+    background: white;
+    
+}
+#cart-link{
+    display: block !important   ;
+    text-align: center;
+}
+#cart-link > i{
+    margin-left: 10px;
+}
+#logo
+{
+    height: 40px;
+    width: auto;
+    object-fit: cover;
+}
+
+/* --------------- MAIN ----------------------- */
+main
+{
+    margin-top: 10px;
+}
+
+.animation-cards-container >div
+{
+    height: 80vh;
+    
+    margin-bottom: 20px;
+}
+.animation-cards-container > div >div
+{
+    position: relative;
+}
+.animation-cards-container > div >div:first-child{
+    margin-top: 10px;
+}
+
+.animation-cards-container > div >div>img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    animation: magic 1s 1;
+    
+}
+
+.content
+{
+    width: 500px;
+    animation: cont 2s 1;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transition: ease-out;
+   
+}
+
+@keyframes magic {
+    0%{
+        transform: translateY(50px);
+        opacity: 0.35;
+    }
+    
+    100%
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes cont {
+    0%{
+        top:10%;
+        opacity: 0.35;
+    }
+    100%
+    {
+        top: 20%;
+        opacity: 1;
+      
+    }
+}
+
+.content > button
+{
+    margin-bottom: 10px;
+} 
+
+.oneplus-watch >*, .oneplus-tv >*, .oneplus-audio>*
+{
+    color: black;
+}
+
+.oneplus-watch >h1>span{
+    color: red;
+}
+.grid-box >div >div
+{
+    height: 60vh;
+    margin-bottom: 20px;
+    position: relative;
+}
+.grid-box >div >div>img
+{
+    
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.info
+{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+.owl-carousel
+{   
+    height: 400px;
+    color: black;
+    width: 100%;
+}
+
+.card
+{
+    height: 360px;
+}
+
+
+.card-img-top
+{
+    height: 100px;
+    width: 100%;
+    object-fit: contain;
+}
+.card-body > h5
+{
+    
+    font-size: 1.2rem;
+}
+
+.my-carousel a
+{
+    color: black;
+}    
+
+.my-carousel a:hover,.list a:hover
+{
+    color: red;
+}
+
+.newsletter
+{
+    margin: 20px 0;
+    width: 100%;
+    height:400px;
+    background: url("./Images/image (11).jpg") no-repeat bottom;
+    background-size: cover;
+}
+.newsletter input{
+    margin: 20px auto;
+}
+
+.list
+{
+    height: 300px;
+    width: 100%;
+    color: black;
+}
+
+.list h6
+{
+    font-size: 1.3rem;
+    color: black;
+}
+.list a{
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: gray;
+}
+
+.list .row >.col
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.list-responsive{
+    display: none;
+}
+
+/*--------- FOOTER -------- */
+
+footer{
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+}
+
+.country
+{
+    background: lightcoral;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    
+    background:transparent;
+}
+.country > img{
+    
+    width: 30px;
+    height: auto;
+    object-fit: cover;
+}
+
+footer a,footer h6,footer h5
+{
+    color: black;
+}
+#row-1
+{
+    margin: 10px 0;
+}
+
+#row-1 p{
+    text-align: center;
+}
+
+#row-1 > div +div{
+    margin-top: 6px;
+}
+
+/*--------------------------------------------------- */
+
+/* -------- RESPONSIVE WEB DESIGN ----------  */
+
+@media screen and (max-width: 1000px) and (min-width: 640px)
+{
+
+.content
+{
+    width: 350px;
+    top: 10%;
+    left: 10%;
+}
+.newsletter{
+    width: 100% ;
+    background-size: cover;
+}
+
+.newsletter .col{
+    margin-top: 20px;
+}
+
+.newsletter input{
+    margin: 20px auto;
+    width: 350px;
+    
+}
+.newsletter label{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.list
+{
+    display: none;
+}
+
+.list-responsive{
+    display: block;
+}
+.list-responsive a{
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+}
+.list-responsive a:hover{
+    color: red;
+}
+.accordion-body,.ending
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.country
+{
+    margin: 0 auto;
+}
+
+}
+
+
+@media screen and (max-width: 639px) and (min-width: 300px)
+{
+nav{
+    height: 35px;
+}
+#logo{
+    height: 30px;
+}
+
+main{   
+    
+    margin-top: 10px;
+}
+.animation-cards-container >div
+{
+    height: 60vh;
+}
+
+.content{
+    width: 220px;
+    top: 10%;
+   left: 10%;
+}
+
+.content > *{
+    font-size: 1.1rem;
+}
+
+.content > h1,.info>*{
+    font-size: 1.4rem;
+}
+
+.info{
+    width: 250px;
+    left: 10%;
+}
+
+@keyframes cont {
+    0%{
+        top:0;
+        opacity: 0.35;
+    }
+    100%
+    {
+        top: 10%;
+        opacity: 1;
+      
+    }
+}
+
+.list
+{
+    display: none;
+}
+
+.list-responsive{
+    display: block;
+}
+.list-responsive a{
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+}
+.list-responsive a:hover{
+    color: red;
+}
+.accordion-body,.ending
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.country
+{
+    
+    margin: 10px auto;
+}
+
+.newsletter{
+    height: 300px;
+    width: 100% ;
+    background-size: cover;
+}
+
+.newsletter .col{
+    margin-top: 20px;
+}
+
+.newsletter input{
+    margin: 20px auto;
+    width: 350px;
+    
+}
+
+}
